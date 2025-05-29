@@ -1,11 +1,13 @@
+import { Link } from 'expo-router'
 import { StyleSheet, Text, View } from 'react-native'
 
 
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>wellcome to home page</Text>
-      <Text style={{ marginTop: 10 }}> My name Mustafa</Text>
+      <Link href={"/about"}>About me</Link>
+      <Text style={styles.title}>👋 Hello F24 👋</Text>
+      <Text style={{ marginTop: 10 }}> Här är musse 🥸</Text>
     </View>
   )
 }
@@ -17,6 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#adb5bd"
   },
   title: {
     fontSize: 18,
